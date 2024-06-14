@@ -2,6 +2,7 @@ package com.doig.portfolio.hibernateshop.entity;
 
 import jakarta.persistence.*;
 
+
 @Entity
 @Table
 public class PurchasableItem {
@@ -38,5 +39,13 @@ public class PurchasableItem {
 
     public void setPrice(float price) {
         this.price = price;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
